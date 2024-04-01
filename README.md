@@ -27,3 +27,12 @@ c.	The controller invokes the `FilterEmail` method of the `EmailFilterService` t
 7.	EmailFilterService:
 a.	Contains the core logic for filtering email content based on a list of classified words.
 b.	It iterates through the classified words and replaces them with asterisks in the email text if found.
+
+
+Sample data:
+{
+  "classifiedWords": [
+    "confidential", "sensitive", "classified", "secret", "proprietary"
+  ],
+  "emailText": "The confidential email contained sensitive, classified information and disclosed secret proprietary data."
+}
